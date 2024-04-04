@@ -4,7 +4,7 @@
     <title>E Club</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Poppins:wght@100;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap"rel="stylesheet'>
@@ -15,15 +15,15 @@
         <i class="fas fa-angle-up"></i>
       </div>
       <!-- Header -->
-      <nav class="navbar bg-transparent absolute top-0 bg-gradient-to-b from-black/70 to-transparent py-6 text-white">
+      <nav class="navbar">
         <div class="max-width">
-          <div class="logo"><a href="#"><img class="h-12" src="assets/eclub-logo.png" alt=""></div>
+          <div class="logo"><a href="#"><img class="logoImg" style="max-width: 250px;" src="assets/logo.png" alt=""></div>
           <ul class="menu">
             <li><a href="#flagship" class="menu-btn"><strong>Events</strong></a></li>
             <li><a href="e-club.html" class="menu-btn"><strong>Team</strong></a></li>
           </ul>
           <div class="menu-btn">
-            <i class="fas fa-bars"></i>
+            <img src="assets/icons8-hamburger-menu.svg" alt="">
           </div>
         </div>
       </nav>
@@ -38,22 +38,20 @@
 
       <!-- content -->
 
-      <section class="content w-full">
-        <div class="abtUs lg:px-[20%]">
-          <h3 class="font-bold font-[Gilroy-Bold] uppercase">About us</h3>
+      <section class="content">
+        <div class="abtUs">
+          <h3>About us</h3>
           <p>"Entrepreneurship is not just flagship ideas; it's flagship making ideas happen." - Scott Belsky <br>
 
             Welcome to the Venture Development Centre (VDC), a collaborative effort with Northeastern University, Boston to roll-out its flagship NU-IDEA program in Entrepreneurship. The NU-IDEA program is a tried & tested start-up ecosystem model at Northeastern, which has evolved over the past ten years aiming at making student ideas and ventures market-ready. The NU-IDEA program officially kicked-off on 28th January 2020 at the GITAM Visakhapatnam campus.</p>
         </div>
-        <div class="flex flex-col lg:flex-row w-full h-min">
-          <div class="vision lg:w-1/2 bg-black py-16 text-white lg:px-12">
-            <h3 class="font-bold font-[Gilroy-Bold] uppercase">Vision</h3>
-            <p>At our Entrepreneurship Cell, we envision fostering a dynamic environment encouraging active student participation in the entrepreneurial ecosystem. Collaborating with Northeastern University, Boston, through the Venture Development Centre, we bring the renowned NU-IDEA program to our campus. We believe entrepreneurship is flagship turning ideas into reality. We aim to co-create engaging activities with various university clubs, contributing to a vibrant entrepreneurial ecosystem. We are dedicated to nurturing and transforming student ideas and ventures into market-ready successes.</p>
-          </div>
-          <div class="mission lg:w-1/2 py-16 lg:px-12 flex flex-col items-center border-2 border-black justify-center">
-            <h3 class="font-bold font-[Gilroy-Bold] uppercase">Mission</h3>
-            <p>To co-create activities focussing on student's active participation in the entrepreneurial ecosystem from various other clubs in the University, which in turn contributes to the vibrant functioning entrepreneurial ecosystem on the campus.</p>
-          </div>
+        <div class="vision">
+          <h3>Vision</h3>
+          <p>At our Entrepreneurship Cell, we envision fostering a dynamic environment encouraging active student participation in the entrepreneurial ecosystem. Collaborating with Northeastern University, Boston, through the Venture Development Centre, we bring the renowned NU-IDEA program to our campus. We believe entrepreneurship is flagship turning ideas into reality. We aim to co-create engaging activities with various university clubs, contributing to a vibrant entrepreneurial ecosystem. We are dedicated to nurturing and transforming student ideas and ventures into market-ready successes.</p>
+        </div>
+        <div class="mission">
+          <h3>Mission</h3>
+          <p>To co-create activities focussing on student's active participation in the entrepreneurial ecosystem from various other clubs in the University, which in turn contributes to the vibrant functioning entrepreneurial ecosystem on the campus.</p>
         </div>
       </section>
 
@@ -242,55 +240,39 @@
   </div>
 </div>
 
-      
-      <!-- Contact -->
-      <section class="contact" id="contact">
-        <div class="max-width">
-          <h2 class="title">Contact Us</h2>
-          <div class="contact-content">
-            <div class="column left">
-              <div class="text">Walk in at</div>
-              <p>E-Club Executive Cell,<br>
-                Orange Room,Venture Development Centre <br>
-                GITAM University, <br>
-                Gandhi Nagar, Rushikonda, <br>
-                Visakhapatnam, Andhra Pradesh 530045</p>
-              <div class="icons">
-
-                <br>
-
-                <div class="row">
-                  <div class="info">
-                    <div class="head">Mail us at</div>
-                    <div class="sub-title"><a href="mailto:#" style="text-decoration: none; color: #333;">eclub_vdc@gitam.edu</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- Footer -->
       <footer>
         <div class="bottom">
-          <div>
-            <p>Entrepreneurs-Club</p>
-            <p>Venture Development Centre</p>
+          <div class="loc">
+            <img class="vdc" src="assets/red_vdc.png" alt="">
+            <div>
+              <h4 class="walkIn">Walk in at</h4>
+              <p class="addr">E-Club Executive Cell, <br>
+                Orange Room, <br>
+                Venture Development Centre <br>
+                GITAM University, <br>
+                Gandhi Nagar, Rushikonda <br>
+                Visakhapatnam, <br>
+                Andhra Pradesh 530045
+              </p>
+            </div>
           </div>
-          <div>
-            <p>THINK</p>
-            <p>FEEL</p>
-            <p>COLLABORATE</p>
+          <div class="socials">
+            <img class="ftrImg" src="assets/eclub-logo.png" alt="">
+            <p>Contact us at</p>
+            <a href="https://mail.google.com/mail/?view=cm&to=eclub_vdc@gitam.edu">eclub_vdc@gitam.edu</a>
+
+            <div class="socialMedia">
+              <a href="https://www.facebook.com/eclubgitam/"><img src="assets/317727_facebook_social media_social_icon.svg" alt=""></a>
+              <a href="https://www.instagram.com/entrepreneursclub_gitam/"><img src="assets/6636603_instagram_social media_social network_icon.svg" alt=""></a>
+              <a href="https://www.linkedin.com/company/entrepreneur-s-club-e-club"><img src="assets/5296501_linkedin_network_linkedin logo_icon.svg" alt=""></a>
+            </div>
           </div>
-          <div>
-            <p>THINK</p>
-            <p>FEEL</p>
-            <p>COLLABORATE</p>
-          </div>
+          
         </div>
       </footer>
     <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
   </body>
 </html>

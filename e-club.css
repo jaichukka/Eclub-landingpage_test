@@ -1,10 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+  }
+
 .e-clublogo{
-    height: 2rem;
+    height: 70px;
 }
 
 #navItem1 {
     color: #464646;
-    font-family: "Roboto";
+    font-weight: bold ;
 }
 
 .e-club-section{
@@ -14,15 +22,13 @@
 .team-heading {
     margin-bottom: 52px;
     text-align: center;
-    font-family: "Roboto";
     font-size: 28px;
-    font-weight: 700;
-    color: antiquewhite;
+    font-weight: bold;
+    color: #e0e0e0;
 }
 
 .person-names {
     color: #e0e7ee;
-    font-family: "Roboto";
     font-size: 18px;
     font-weight: 500;
     margin-top: 24px;

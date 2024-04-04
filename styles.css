@@ -1,18 +1,9 @@
-@font-face {
-  font-family: 'Gilroy-Bold';
-  src: url('/fonts/gilroy_bold.ttf');
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -146,7 +137,7 @@ section .title::after {
 
 .navbar .menu li a {
   display: block;
-  /* color: #424242; */
+  color: #424242;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -170,6 +161,9 @@ section .title::after {
   font-size: 23px;
   cursor: pointer;
   display: none;
+}
+.menu-btn img {
+  width: 30px;
 }
 
 .scroll-up-btn {
@@ -218,7 +212,7 @@ section .title::after {
 /* Content */
 
 .content {
-  padding:100px 0px 0px 0px;
+  padding: 100px 25%;
   background-color: #efefef;
   color: #484848;
   text-align: center;
@@ -256,7 +250,7 @@ section .title::after {
   font-weight: 300;
   line-height: 25.48px;
   margin: 0 50px ;
-  /* padding-bottom: 100px; */
+  padding-bottom: 100px;
 }
 
 .mission h3 {
@@ -557,37 +551,6 @@ section .title::after {
   font-weight: normal;
 }
 
-
-
-/*  Contact  */
-.contact {
-  background: radial-gradient(#cacaca, white);
-}
-
-.contact .contact-content .column {
-  width: calc(50% - 30px);
-}
-
-.contact .contact-content .text {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.contact .contact-content .left p {
-  text-align: justify;
-}
-
-.contact .contact-content .row {
-  display: flex;
-  height: 65px;
-  align-items: center;
-}
-
-.contact .contact-content .row .info {
-  margin-left: 30px;
-}
-
 /*  Footer  */
 footer {
   background: #111;
@@ -599,117 +562,72 @@ footer {
 .bottom {
   display: flex;
   align-items: center;
+  flex-direction: row-reverse;
   justify-content: space-around;
   min-height: 250px;
 }
 
-/* Team */
+.ftrImg {
+  width: 40%;
+}
 
-.demo{
-  background: #252c44;
+.loc {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+  justify-content: space-between;
 }
-.our-team{
-  text-align: center;
+
+.walkIn {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 47px;
+  padding-bottom: 30px ;
+  text-align: left;
 }
-.our-team .team_img{
-  position: relative;
-  overflow: hidden;
+
+.addr {
+  text-align: left;
 }
-.our-team .team_img:after{
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255,255,255,0.2);
-  position: absolute;
-  bottom: -100%;
-  left: 0;
-  transition: all 0.3s ease 0s;
+
+.socials {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-.our-team:hover .team_img:after{
-  bottom: 0;
+.socials a {
+  text-decoration: none;
+  color: #888c8d;
 }
-.our-team img{
-  width: 100%;
-  height: auto;
+.socialMedia
+{
+  margin-top: 2rem;
 }
-.our-team .social{
-  padding: 0 0 18px 0;
-  margin: 0;
-  list-style: none;
-  position: absolute;
-  top: -100%;
-  right: 10px;
-  background: #f76c5e;
-  border-radius: 0 0 20px 20px;
-  z-index: 1;
-  transition: all 0.3s ease 0s;
+.socialMedia img{
+  height: 5%;
+  width: 5%;
 }
-.our-team:hover .social{
-  top: 0;
+
+
+.socialMedia a {
+  flex: 0 0 auto; /* Allow the icons to shrink if necessary */
+  margin: 0 5px; /* Add some space between the icons */
 }
-.our-team .social li a{
-  display: block;
-  padding: 15px;
-  font-size: 15px;
-  color: #fff;
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 600px) {
+  .socialMedia {
+    justify-content: center; /* Center the icons */
+  }
 }
-.our-team:hover .social li a:hover{
-  color: #2a4284;
-}
-.our-team .team-content{
-  padding: 20px 0;
-  background: #fff;
-}
-.our-team .title{
-  font-size: 18px;
-  font-weight: bold;
-  color: #2a4284;
-  text-transform: capitalize;
-  margin: 0 0 20px;
-  position: relative;
-}
-.our-team .title:before{
-  content: "";
-  width: 25px;
-  height: 1px;
-  background: #27ae61;
-  position: absolute;
-  bottom: -10px;
-  right: 50%;
-  margin-right: 9px;
-  transition-duration: 0.25s;
-}
-.our-team .title:after{
-  content: "";
-  width: 25px;
-  height: 1px;
-  background: #27ae61;
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  margin-left: 9px;
-  transition-duration: 0.25s;
-}
-.our-team:hover .title:before,
-.our-team:hover .title:after{
-  width: 50px;
-}
-.our-team .post{
-  display: inline-block;
-  font-size: 15px;
-  color:  #f76c5e;
-  text-transform: capitalize;
-}
-.our-team .post:before{
-  content: "";
-  display: block;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #27ae61;
-  margin: 0 auto;
-  position: relative;
-  top: -13px;
+
+
+.vdc {
+  margin-left: -60px;
+  height: 50px;
+  width: 150px;
 }
 @media only screen and (max-width: 990px){
   .our-team{ margin-bottom: 30px; }
@@ -736,6 +654,18 @@ footer {
 @media (max-width: 991px) {
   .social-menu ul li a {
     left: 114px;
+  }
+
+  .vdc {
+    margin-left: -10px;
+    height: 40px;
+    width: 120px;
+  }
+  .walkIn {
+    font-size: 24px;
+  }
+  .addr {
+    font-size: 12px;
   }
 }
 
@@ -768,9 +698,6 @@ footer {
     display: inline-block;
     margin: 20px 0;
     font-size: 25px;
-  }
-  .logoImg {
-    max-width: 250px;
   }
   .home .home-content .text-2 {
     font-size: 70px;
@@ -839,11 +766,35 @@ footer {
   .services .serv-content .card {
     width: 100%;
   }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 250px;
+  }
+
+  .walkIn {
+    font-size: 24px;
+  }
+  .addr {
+    font-size: 14px;
+  }
+
+  .ftrImg {
+    width: 100%;
+  }
+
+  .loc {
+    padding-bottom: 30px;
+  }
 }
 
 @media (max-width: 500px) {
+
   .logoImg {
-    max-width: 150px;
+    max-width: 150px !important;
   }
   .content div p {
     margin: 0 10%;
